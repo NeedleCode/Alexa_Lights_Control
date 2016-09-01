@@ -1,0 +1,5 @@
+TurnLights turn ligths {State}
+TurnLights could you turn ligths {State}
+TurnLights set ligths {State}
+TurnLights {State}
+TurnLights {State} mode
