@@ -4,24 +4,22 @@ from random import randint
 from flask import Flask, render_template
 from flask_ask import Ask, statement, question, session
 
+#ESP8266 IPs
 url1="http://192.168.1.103/pwm?="
 url2="http://192.168.1.100/pwm?="
 
+#Create a server to comunicate with AlexaSkill
 app = Flask(__name__)
-
 ask = Ask(app, "/")
-
 logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 
-
+#Invite user to ask a ligtht mode 
 @ask.launch
 def new_game():
-
     welcome_msg = "Please tell me  a mode of ilumination"
-
     return question(welcome_msg)
 
-
+#Assigns a pwm value according to the desired ouput user
 @ask.intent("TurnLights", mapping={'state' : 'State'})
 def changeLigthMode(state):
     global url1, url2
