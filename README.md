@@ -25,9 +25,9 @@ Electronics circuit schematics and functionality flowchart.
 ## ¿How it works?
 
 Let’s begin with funcionality.  See flowchart in next image.
-![Figura 1][Diagrama de bloques]
+![Figure 1][Diagrama de bloques]
 
-Figura 1. Flowchart.
+Figure 1. Flowchart.
 
 1. Keep pressed push button and meanwhile say “Alexa Light Control”
 2. Raspberry sends voice command to Alexa Voice Service.
@@ -74,12 +74,14 @@ These are the needed components to replicate the project.
 Plug  USB Audio card to Raspberry an then the microphone to the USB Audio Card.
 Next connect the push button as the following image shows.
 
-Figura 2. Push button connections
+![Figure 2][Raspberry bloques]
+
+Figure 2. Push to talk button
 
 Now connect Esp8266 and the Led Lamp Strip, notice that GND’s are isolated. See Figure 3.
-![Figura 3][Esp8266 bloques]
+![Figure 3][Esp8266 bloques]
 
-Figura 3. Esp8266 and Led Lamp Strip connection
+Figure 3. Esp8266 and Led Lamp Strip connection
 
 ### Raspberry
 
